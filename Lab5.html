@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /////////////////////////Question1/////////////////////////////////////
+        let sum1 = 0;
+        function fun(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > 20)
+                    sum1 = sum1 + arr[i];
+            }
+            return sum1;
+        }
+        let x = [1, 2, 3, 55, 60, 20, 30];
+        let sum = fun(x);
+        console.log(sum);
+        /////////////////////////Question2/////////////////////////////////////
+        let funArray = function (a) {
+            let finalStrArray = [];
+            for (let i = 0; i < a.length; i++) {
+
+                if (a[i].length >= 5 && a[i].includes('a'))
+                    finalStrArray.push(a[i]);
+            }
+            return finalStrArray;
+        };
+        const StrArray2 = ["Hasc", "abcdef", "chinaa", ""];
+        const final = funArray(StrArray2)
+        console.log(final);
+        /////////////////////////Question3///////////////////////////////////
+        let concat1 = (first, second, third) => { let c= first[0] + ',' + first[1] + ',' + second + ',' + third; return c.split(',');}
+        let first = 'hi';
+        let second = [1, 2, 3];
+        let third = ['Hello', 'world'];
+        let output2 = concat1(first, second, third);
+        console.log(output2);
+
+    </script>
+
+
+
+
+<body>
+
+
+
+
+</body>
+
+</html>
